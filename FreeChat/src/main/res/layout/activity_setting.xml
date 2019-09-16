@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context="freechat.yassinedeveloper.com.freechat.SettingActivity">
+
+    <LinearLayout
+        android:background="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:background="#1e1e1e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/background_splash" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username Text#6572"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- User settings-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="USER SETTINGS"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/IconTextview"
+                android:id="@+id/myaccount"
+                >
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/myaccount"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privacy"
+                style="@style/IconTextview">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/privacy"
+                   />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Apps settings-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="APP SETTINGS"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/voice"
+                style="@style/IconTextview">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Voice &amp; Video"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/IconTextview">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Notification"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/IconTextview">
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Text &amp; Image" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/IconTextview">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Appearance"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/IconTextview">
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Behavior" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/IconTextview">
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/discordlogowhite" />
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Language" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
